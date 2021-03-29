@@ -144,8 +144,29 @@
             var cnt = 0;
             var $slideView = $('#section1 .slide-view');
             var $slideW = $('#section1 .slide-view').innerWidth();
+            var $slideLeft = $('#section1 .slide-view .left');
+            var $slideRight = $('#section1 .slide-view .right');
+            var $boxW = $slideW/2;
             var setId = null;
             var setId2 = null;
+
+            function resizeFn(){
+                $slideW = $('#section1 .slide-view').innerWidth();
+                $slideLeft = $('#section1 .slide-view .left');
+                $slideRight = $('#section1 .slide-view .right');
+                $slideWrap = $('#section1 .slide-wrap');
+                $boxW = $slideW/2;
+                $slideWrap.css({width:$slideW*5,marginLeft:-$slideW*1});
+                $slideLeft.css({width:$boxW });
+                $slideRight.css({width:$boxW });
+                mainSlideFn();
+
+            }
+            resizeFn();
+
+            $(window).resize(function(){
+                resizeFn();
+            });
 
             ///1.슬라이드함수 
             function mainSlideFn(){
