@@ -90,17 +90,10 @@
 #wrap #main #section2 .wrap .gap .content .gallery-box .gallery{float:left;}
 
 /* 갤러리 왼쪽 박스 탑박스  */
-
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box,
-#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box,
-#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box,
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box{height:25.875vw;}
-
-
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap,
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap,
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap,
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap {height:20.08333333vw;;margin-top:-10.04166667vw;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap {margin-top:-10.04166667vw;}
 
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap,
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap,
@@ -121,7 +114,7 @@
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content span i,
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content span i,
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content span i,
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content span i  {width:30px;height: 4px;margin-top:2.08333333333333vw;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content span i  {margin-top:2.08333333333333vw;}
 
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .lable-box,
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .lable-box,
@@ -250,6 +243,15 @@
 #wrap #main #section2 .wrap .gap .content .title-box{margin-bottom:9.183673469vw;}
 #wrap #main #section2 .wrap .gap .content .title-box h2{padding-bottom:1.530612245vw;}
 
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content h6,
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content h6,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content h6,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content h6 {font-size:15px;line-height: 22px;padding-bottom:15.5px;}
+
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content p,
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content p,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content p,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content p {font-size:12px;line-height: 180%;padding-bottom:10px}
 
  /* 섹션 3 */
  #wrap #main #section3 .wrap .gap .content .title-box{padding-bottom:9.183673469vw;}
@@ -382,12 +384,16 @@
         
     #wrap #main #section2 .wrap .gap .content .gallery-box{width: 100%;}
     /*section3*/
-    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li {float:none;width:60%;margin:0 auto;margin-bottom:3.947368421vw;}
-    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap {padding:5.263157895vw 0;}
-#wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  span {padding-bottom:1.710526316vw;}
-#wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  span i {font-size:3.947368421vw;}
-#wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  h4 {font-size:1.973684211vw;line-height: 140%;}
-    
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul {width:90%;margin:0 auto;text-align: center;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li {float:none;width:100%;margin-bottom:3.947368421vw;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap {padding:0;margin:0 auto;text-align: center;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content {width:200px;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap {padding:50px 0;}
+#wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  span {padding-bottom:15px;}
+#wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  span i {font-size:41px;}
+#wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  h4 {font-size:15px;line-height: 22px;}
+
+        
     /*section4*/
 
 
@@ -458,6 +464,10 @@
 }
 
 @media all and (max-width:700px){
+    #wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content span i, 
+    #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content span i,  
+    #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content span i,  
+    #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content span i  {height: 3px;}
  
     #wrap #main #section4 .wrap .gap .content .right-box .wrap .gap .content > ul > li .gap .content a span:nth-child(1) i  {font-size:15px;}
     #wrap #main #section4 .wrap .gap .content .right-box .wrap .gap .content > ul > li .gap .content a h4  {font-size:13px;line-height: 30px;}
@@ -481,11 +491,36 @@
 
 }
 
+@media all and (max-width:550px){
+    #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap,
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap {padding:1.818181818vw;}
+
+
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content h6,
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content h6,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content h6,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content h6 {font-size:2.727272727vw;line-height: 120%;padding-bottom:1.818181818vw;}
+
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content p,
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content p,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content p,
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content p {font-size:2.181818182vw;line-height: 120%;padding-bottom:3px}
+
+}
+
 @media all and (max-width:500px){
 
 
     #wrap #main #section1 .wrap .gap .content .slide-container .slide-view .slide-wrap .right .right-gap{padding:6.57894736842105vw;}
     #wrap #main #section1 .wrap .gap .content .slide-container .slide-view .slide-wrap .right .right-gap .right-content .content-gap{padding:0;}
+
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content {width:40vw;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap {padding:10vw 0;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  span {padding-bottom:3vw;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  span i {font-size:8.2vw;}
+    #wrap #main #section3 .wrap .gap .content .mark-box .wrap .gap ul li .mark-gap .mark-content .content-gap  h4 {font-size:3vw;line-height: 4.4vw;}
     
 
     #modal .modal-wrap .modal-gap .modal-content .left-box{height:80%;}

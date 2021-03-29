@@ -210,24 +210,13 @@
 
             //5. 자동 슬라이드 
             function autoPlay() {
-                var t = 0;
-                  setId = setInterval(function(){
-                       t++;
-                       if(t>2){                        
-                        clearInterval(setId);
-                       }
-                       else{
-                        nextCountFn();
-                       }
-                   },4000);
+               
+                  setId = setInterval(nextCountFn,4000);
                }
 
-            //    function autoPlay(){
-            //     setId = setInterval(nextCountFn2,4000);
-            //    }
+               autoPlay();
                     
-            ///자동 슬라이드 함수는 cnt가 2가 되면 멈춘다. 
-            ///메인 슬라이드 실행시 3초 후에 자동 슬라이드가 실행된다. 단 cnt2까지만 도달한다. 
+          
                function stopFn(){
                    var c = 0;
                    clearInterval(setId);
@@ -716,7 +705,8 @@
             num4[idx] = $(this).data('number');
             
           });
-        
+
+            //패럴럭스
           $(window).scroll(function(){
 
             if($(window).scrollTop() >= $('#section8').offset().top-400  ){
@@ -738,19 +728,7 @@
             }
            });
 
-            // $(window).scroll(function(){
-
-            //     if($(window).scrollTop() >= $('#section8').offset().top-700){
-            //         $('#section8 .content > ul').addClass('addCounter');
-            //     }
-            //     else{
-            //          $('#section8 .content > ul').removeClass('addCounter');
-            //      }
-            //     // if($(window).scrollTop() == 0){
-            //     //     $('#section8 .content > ul').removeClass('addCounter');
-            //     // }
-            // });
-
+           
             function formatFn(){
                 $ul.css({top:0});
               }
@@ -834,6 +812,8 @@
             var $blogLi = $('#section9 .blog-view > ul > li');
             var cols = 4;
             var $blogLiW = $viewW/cols;
+            var setId = null;
+            var setId2 = null;
             
 
             function resizeFn(){
@@ -843,6 +823,7 @@
                 $blogLi = $('#section9 .blog-view > ul > li');
                 cols = 4;
                 $blogLiW = $viewW/cols;
+               
 
 
                 if(winW > 1200){
@@ -887,18 +868,44 @@
             }
             //3. 터치 스와이프 
             $blogView.swipe({
-                swipeLeft:function(){
+                swipeLeft:function(e){
+                    e.preventDefault();
+                    stopFn();
                     nextCntFn();
                    
                 },
-                swipeRight:function(){
+                swipeRight:function(e){
+                    e.preventDefault();
+                    stopFn();
                     prevCntFn();
                    
                 }
             });
 
             //4.자동 슬라이드 
-            // setInterval(nextCntFn,8000);
+            function playFn(){
+                setId = setInterval(nextCntFn,8000);
+            }
+            playFn();
+
+            function stopFn(){
+                var t = 0;
+                clearInterval(setId);
+                clearInterval(setId2);
+
+                setId2 = setInterval(function(){
+                    
+                    t++;
+                    if(t>=4){
+                        clearInterval(setId2);
+                        nextCntFn();
+                        playFn();
+
+                    }
+                },1000);
+            }
+
+             
 
         },
         section10Fn:function(){

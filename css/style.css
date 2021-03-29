@@ -115,15 +115,15 @@
 #wrap #main #section2 .wrap .gap .content .title-box h2{color:#d66e4a;font-weight: 700;font-size:35px;line-height: 36px;padding-bottom:15px;}
 #wrap #main #section2 .wrap .gap .content .title-box span{color:#555;line-height: 22px;font-size:15px;font-weight: 500;}
 /* 섹션 2 갤러리 박스 */
-#wrap #main #section2 .wrap .gap .content .gallery-box{width:100%;/* height:621px; */}
+#wrap #main #section2 .wrap .gap .content .gallery-box{width:100%;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .gallery{float:left;width:50%;}
 
 
 /* 갤러리 왼쪽 박스 탑박스  */
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box{position:relative;width:100%;/* height:310.3333px */;background:url(../img/travel-img8.jpg) no-repeat;background-size:cover;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box{position:relative;width:100%;;background:url(../img/travel-img8.jpg) no-repeat;background-size:cover;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box {position:absolute;top:0;right: 0;width: 50%;height: 100%;background:rgba(0,0,0,.7);transition:all .5s ease-in-out}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box:hover .text-box {right: 50%;background:rgba(0,0,0,1)}
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap {position:relative;top:50%;height:241px;width:100%;margin-top:-120.5px;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap {position:relative;top:50%;width:100%;margin-top:-120.5px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap {padding:46px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content {width:100%;height: 100%;text-transform: uppercase;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .text-wrap .text-gap .text-content h6 {font-size:15px;line-height: 22px;color:#828282;font-weight: 600;padding-bottom:15.5px;}
@@ -136,10 +136,10 @@
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .top-box .text-box .lable-box span {font-size:14px;line-height: 20px;font-weight: 400;color:#000;}
 
 /* 갤러리 왼쪽 바텀박스 */
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box{position:relative;width:100%;/* height:310.3333px; */;background:url(../img/ishan-seefromthesky-WVziwa_DDwI-unsplash.jpg) no-repeat;background-size:cover;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box{position:relative;width:100%;;background:url(../img/ishan-seefromthesky-WVziwa_DDwI-unsplash.jpg) no-repeat;background-size:cover;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box {position:absolute;top:0;left:0;width: 50%;height: 100%;background:rgba(0,0,0,.7);transition:all .5s ease-in-out}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box:hover .text-box {left:50%;background:rgba(0,0,0,1)}
-#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap {position:relative;top:50%;height:241px;width:100%;margin-top:-120.5px;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap {position:relative;top:50%;width:100%;margin-top:-120.5px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap {padding:46px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content {width:100%;height: 100%;text-transform: uppercase;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap .text-content h6 {font-size:15px;line-height: 22px;color:#828282;font-weight: 600;padding-bottom:15.5px;}
@@ -154,10 +154,10 @@
 /* 갤러리 오른쪽 박스 */
 #wrap #main #section2 .wrap .gap .content .gallery-box .right{height: 100%;background:#000;}
 /* 갤러리 오른쪽 탑 박스 */
-#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box{position:relative;width:100%;/* height:310.3333px */;background:url(../img/travel-img9.jpg) no-repeat;background-size:cover;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box{position:relative;width:100%;;background:url(../img/travel-img9.jpg) no-repeat;background-size:cover;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box {position:absolute;top:0;right: 0;width: 50%;height: 100%;background:rgba(0,0,0,.7);transition:all .5s ease-in-out}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box:hover .text-box {right: 50%;background:rgba(0,0,0,1)}
-#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap {position:relative;top:50%;height:241px;width:100%;margin-top:-120.5px;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap {position:relative;top:50%;width:100%;margin-top:-120.5px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap {padding:46px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content {width:100%;height: 100%;text-transform: uppercase;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap .text-content h6 {font-size:15px;line-height: 22px;color:#828282;font-weight: 600;padding-bottom:15.5px;}
@@ -170,10 +170,10 @@
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .lable-box span {font-size:14px;line-height: 20px;font-weight: 400;color:#000;}
 
 /* 갤러리 오른쪽 바텀 박스 */
-#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box{position:relative;width:100%;/* height:310.3333px; */background:url(../img/travel-img10.jpg) no-repeat;background-size:cover;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box{position:relative;width:100%;background:url(../img/travel-img10.jpg) no-repeat;background-size:cover;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box {position:absolute;top:0;left:0;width: 50%;height: 100%;background:rgba(0,0,0,.7);transition:all .5s ease-in-out}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box:hover .text-box {left:50%;background:rgba(0,0,0,1)}
-#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap {position:relative;top:50%;height:241px;width:100%;margin-top:-120.5px;}
+#wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap {position:relative;top:50%;;width:100%;margin-top:-120.5px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap {padding:46px;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content {width:100%;height: 100%;text-transform: uppercase;}
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap .text-content h6 {font-size:15px;line-height: 22px;color:#828282;font-weight: 600;padding-bottom:15.5px;}
