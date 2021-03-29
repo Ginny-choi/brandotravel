@@ -492,6 +492,7 @@
 }
 
 @media all and (max-width:550px){
+    #wrap #main #section1 .wrap .gap{padding:0;}
     #wrap #main #section2 .wrap .gap .content .gallery-box .right .bottom-box .text-box .text-wrap .text-gap,
 #wrap #main #section2 .wrap .gap .content .gallery-box .right .top-box .text-box .text-wrap .text-gap,
 #wrap #main #section2 .wrap .gap .content .gallery-box .left .bottom-box .text-box .text-wrap .text-gap,
