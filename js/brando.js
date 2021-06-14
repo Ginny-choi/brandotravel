@@ -20,9 +20,73 @@
             var $header = $('#header');
             var  $mainBtn = $('#header .main-btn');
             var $logoImg = $('#header .logo-box img');
+            var delta = 0;            
+            var $wheel = $('.wheel');
+
+            // $wheel.each(function(idx){
+            //     $(this).on('mousewheel DOMMouseScroll', function(e){
+            //         e.preventDefault();
+            //         if(e.detail){
+            //             delta = e.detail*-40;
+            //         }
+            //         else{
+            //             delta = e.originalEvent.wheelDelta;
+            //         }
+            //         if(delta<0){
+            //             if(!$wheel.is(':animated')){
+            //                 if(idx < 5){
+            //                     $('html,body').stop().animate({scrollTop:$(this).next().offset().top},600);
+            //                 }   
+            //             }
+            //         }
+            //         else{
+            //             if(!$wheel.is(':animated')){
+            //                 if(idx > 0){
+            //                     $('html,body').stop().animate({scrollTop:$(this).prev().offset().top},600);
+            //                 }
+            //             }
+            //         }
+
+            //     });
+            // });
+
+            // $section.each(function(idx){
+            //     $(this).on('mousewheel DOMMouseScroll', function(e){
+            //         e.preventDefault();
+            //         if(e.detail){
+            //             delta=e.detail*-40;
+            //         }
+            //         else{
+            //             delta = e.originalEvent.wheelDelta;
+            //         }
+                    
+            //         if( delta < 0){
+            //             if( !$('*').is(':animated')){
+            //                 if(idx < 10){
+            //                     $('html,body').stop().animate({scrollTop:$(this).next().offset().top},600);
+                               
+            //                 }
+            //                 else if( idx = 11){
+            //                     $('html,body').stop().animate({scrollTop:$('#footer').offset().top},600);
+            //                 }
+            //             }
+            //         }
+            //         else{
+            //             if(!$('*').is(':animated')){
+            //                 if(idx > 0){
+            //                     $('html,body').stop().animate({scrollTop:$(this).prev().offset().top},600);
+            //                 }
+            //             }
+            //         }
+            //     })
+
+            // });
+
+
 
             function scrollEventFn(){
                
+                
                 if($win.scrollTop() > 70){
                     $header.addClass('addBlack'); 
                     $logoImg.attr('src','./img/logo-travel.png');
@@ -147,18 +211,21 @@
             var $slideLeft = $('#section1 .slide-view .left');
             var $slideRight = $('#section1 .slide-view .right');
             var $boxW = $slideW/2;
+            var $boxH = $boxW*1.271929825;
             var setId = null;
             var setId2 = null;
+            var $winW = $(window).innerWidth();
 
             function resizeFn(){
+                $winW = $(window).innerWidth();
                 $slideW = $('#section1 .slide-view').innerWidth();
-                $slideLeft = $('#section1 .slide-view .left');
-                $slideRight = $('#section1 .slide-view .right');
-                $slideWrap = $('#section1 .slide-wrap');
-                $boxW = $slideW/2;
-                $slideWrap.css({width:$slideW*5,marginLeft:-$slideW*1});
-                $slideLeft.css({width:$boxW });
-                $slideRight.css({width:$boxW });
+
+                
+                    $boxW = $slideW/2;
+                    $slideWrap.css({width:$slideW*5,marginLeft:-$slideW*1});
+                    $slideLeft.css({width:$boxW });
+                    $slideRight.css({width:$boxW});
+                            
                 mainSlideFn();
 
             }
@@ -254,8 +321,7 @@
                    },1000);
                }
             
-   
-
+              
         },
         section2Fn:function(){
            
@@ -285,10 +351,16 @@
             $(window).resize(function(){
                 resize();
             });
-            
 
+            $(window).scroll(function(){
+                if($(window).scrollTop() >= $('#section2').offset().top-300){
+                    $('#section2 .gallery-box').addClass('addshow');
+                }
+                else{
+                    $('#section2 .gallery-box').removeClass('addshow');
+                }
+            })
 
-           
 
 
         },
@@ -668,17 +740,18 @@
             var textW    = $('#section7 .text-box').innerWidth();
             var textH    = textW;
 
-                 textW    = $('#section7 .text-box').innerWidth();
-                textH    = textW;
-                $textBox.css({height: textH});
 
             function resizeFn(){
                 textW    = $('#section7 .text-box').innerWidth();
                 textH    = textW;
                 $textBox.css({height: textH});
             }
+            resizeFn();
+            setTimeout(resizeFn,100);
+
             $(window).resize(function(){
                 resizeFn();
+                setTimeout(resizeFn,100);
             });
 
            
@@ -826,6 +899,7 @@
             var $blogView = $('#section9 .blog-view');
             var $blogWrap = $('#section9 .blog-wrap');
             var cnt=0;
+            var n = 3;
 
             var winW = $(window).innerWidth();
             var $viewW  = $('#section9 .blog-view').innerWidth();
@@ -840,8 +914,7 @@
             function resizeFn(){
                 winW = $(window).innerWidth();
                 $viewW  = $('#section9 .blog-view').innerWidth();
-                $blogUl = $('#section9 .blog-view > ul');
-                $blogLi = $('#section9 .blog-view > ul > li');
+                
                 cols = 4;
                 $blogLiW = $viewW/cols;
                
@@ -849,19 +922,24 @@
 
                 if(winW > 1200){
                     cols = 4;
+                    n=3;
                 }
                 else if (winW >800){
                     cols =3;
+                    n=4;
                 }
                 else if (winW > 700){
                     cols =2;
+                    n=5;
                 }
                 else {
                     cols = 1;
+                    n=6;
                 }
                 $blogLiW = $viewW/cols;
                 $blogLi.css({width: $blogLiW  });
                 $blogUl.css({width: $blogLiW *7 });
+                blogSlideFn();
             }
             resizeFn();
             setTimeout(resizeFn,100);
@@ -873,7 +951,7 @@
 
             //1.메인 슬라이드 함수 
             function blogSlideFn(){
-                if(cnt>3)cnt=3;
+                if(cnt>n)cnt=n
                 if(cnt<0)cnt=0;
                 $blogWrap.stop().animate({left:-$blogLiW*cnt},500);
             }
@@ -925,6 +1003,40 @@
                     }
                 },1000);
             }
+
+            //wheel 
+            var delta = 0 ;
+            $blogWrap.on('mousewheel DOMMouseScroll', function(e){
+                e.preventDefault();
+                if(e.detail){
+                    delta = e.detail*-40;
+                }
+                else{
+                    delta = e.originalEvent.wheelDelta;
+                }
+
+                if(delta < 0){
+                    stopFn();
+                    if( !$blogWrap.is(':animated')){
+                        nextCntFn();
+                        console.log( cnt);
+                        if(cnt > n){
+                            console.log('cnt :', cnt);
+                        }
+                    }
+                }   
+                else{
+                    stopFn();
+                    if( !$blogWrap.is(':animated')){
+                        prevCntFn();
+                        console.log( cnt);
+                        if(cnt < 0){
+                            console.log('cnt' , cnt);
+                        }
+                    }
+                }
+                
+            })
 
              
 
