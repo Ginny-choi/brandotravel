@@ -17,6 +17,7 @@
 * Hasclass apis를 이용하여 클래스를 가진 경우에는 토글 기능만 적용시킴 
 
 ### 액티비티 갤러리 
+![갤러리1](https://user-images.githubusercontent.com/77954029/126467043-a673ffa4-05c4-48b2-8880-1eafeee9da46.gif)
 * 각 주제 버튼의 인덱스 값을 구하여 조건문으로 주제에 맞는 이미지를 정렬함 
 * position : absolute 로 설정하여 top , left 값을 조정함 
 * transform:scale(0)으로 설정 후 이미지 등장시 scale(1) 로 설정하여 줌 효과를 나타냄 
